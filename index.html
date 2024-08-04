@@ -1,23 +1,165 @@
  <!DOCTYPE html>
  <html lang="en">
-
  <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>My Profile</title>
- </head>
+  <meta 
+  name="description"
+  content="Portfolio website of Roda Ahmed"
+  />
+  <title>Roda Ahmed - Portfolio</title>
+  <link
+  rel="icon" 
+  href="assets/favicon-32x32.png" 
+  type="image/png" 
+  sizes="32x32"
+  />
+  <link
+  rel="icon" 
+  href="assets/favicon-16x16.png" 
+  type="image/png" 
+  sizes="16x16"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+  href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:wght@300;400;500;600&display=swap" 
+  rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
 
  <body>
-   <p>Hello World</p>
-   
-      <h2>Look, a picture of a silly dog!</h2>    
-   
- <img 
-       src="https://upload.wikimedia.org/wikipedia/commons/4/48/Silly_Dog_%282277051513%29.jpg"   
-      alt="A silly looking dog."
-       width="400px" 
-   />
- </body>
+    <header>
+       
+        <nav class="desktop-nav" aria-label="primary"> 
+                <ul>
+                    <li>
+                        <a href="./Page2.html">About</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact-form">Contacts</a>
+                    </li>
+                </ul>
+        </nav>
+        <nav class="mobile-nav display-none" aria-label="Primary">
+            <ul>
+                <li>
+                    <a href="./Page2.html">About</a>
+                </li>
+                <li>
+                    <a href="">Projects</a>
+                </li>
+                <li>
+                    <a href="">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+        </header>
+        
+    <section class="hero">
+        <div class="hero-container">
+            <img src="img\me.jpg" class="hero-image"
+            alt="bitmoji of Roda Ahmed">
+        </div>
+        <p>Hello I'm</p>
+        <h1>Roda Ahmed</h1>
+        <span>
+      <a href="assets/your-cv.pdf" download>
+        <a href="#view" class="btn-primary">Download CV</a>
+      </a>
+        </span>
+    </section>
 
+    <section id="projects" class="projects">
+        <h2> Projects </h2>
+        <div class="project-container">
+            <article>
+                <h3> Project 1</h3>
+                <p> 
+                    projects 1 dets.
+                </p>
+                <img class="icon" src="img\project 1.png"
+                       alt="project 1 dummy icon" />
+                <a href="#" class="btn-primary">View</a>
+            </article>
+            <article>
+            <h3> Project 2 </h3> 
+            <p>
+                project 2 dets 
+            </p>
+            <img class="icon" src="img\project 2.png"
+                       alt="project 2 dummy icon" />
+            <a href="#" class="btn-primary">View</a>
+         </article>
+         <article>
+            <h3>Project 3</h3>
+        <p>
+            project 3 dets 
+        </p>
+        <img class="icon" src="img/project 3.jpg"
+                       alt="project 3 dummy icon" />
+        <a href="#" class="btn-primary">View</a>
+         </article>
+         <article>
+            <h3>Project 4</h3>
+        <p>
+            project 4 dets 
+        </p>
+        <img class="icon" src="img\project 4.png"
+                       alt="project 4 dummy icon" />
+        <a href="#" class="btn-primary">View</a>
+         </article>
+        </div>
+    </section>
+
+    <section id="contact-form" class="contact-form">
+        <h2>Lets keep in touch!</h2>
+        <form action="https://formspree.io/f/mpwadbda"
+        method="post">
+            <label for="your-name">Your Name</label>
+            <input type="text" id="your-name">
+            <label for="Email">Email</label>
+            <input type="text" id="your-email">
+           <label for="message">Your Message</label>
+           <textarea name="message-text" id="message" rows="5"></textarea>
+           <input type="submit" value="Submit">
+        </form>
+    </section>  
+
+       <footer>
+            <a href="https://www.linkedin.com/in/roda-a-3566a72b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" title="@Roda Ahmed on Linkedin">
+                <img class="socials-icon" src="\img\linkedin logo.png"
+                    alt="The Linkedin logo: in written in white with blue background" />
+            </a>
+            <a href="https://github.com/rodahmed21/rodahmed.github.io">
+                <img class="socials-icon" src="./img/github.svg"
+                    alt="The Github logo: a black circle with the silhouette of a white cat, with one tentacle arm" />
+            </a>
+        </footer> 
+
+ </body>
  </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
