@@ -3,11 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:wght@300;400;500;600&display=swap');
 
 :root {
-  --brand: #1d7b76;
-  --action: #edd51f;
-  --white: #c9a9c7;
-  --base-light: #e6ebeb;
-  --base-dark: #0d0711;
+  --brand: #916a70;
+  --action: #e7da24;
+  --white: #fff;
+  --base-light: #E4E6C3;
+  --base-lightest: #D9DFE9;
+  --base-dark: #654a4e;
   --black: #111111;
 }
 
@@ -17,7 +18,7 @@ html {
   box-sizing: border-box;
   font-size: 16px;
   font-family: "Playfair", sans-serif;
-  color: var(--black);
+  color: var(--base-dark);
   scroll-behavior: smooth;
 }
 
@@ -67,6 +68,9 @@ select {
   font: inherit
 }
 
+body{
+  background-color: var(--base-light);
+}
 /* Utilities */
 
 .display-none {
@@ -159,7 +163,7 @@ header button {
 .mobile-nav a {
   text-decoration: none;
   font-size: larger;
-  color: var(--black);
+  color: var(--white);
 }
 
 /* .desktop-nav */
@@ -176,7 +180,7 @@ header button {
   .desktop-nav a {
     text-decoration: none;
     font-size: larger;
-    color: var(--black);
+    color: var(--white);
   }
 
   .desktop-nav {
@@ -247,8 +251,6 @@ header button {
   }
 }
 
-
-
 /* .Projects */
 
 .projects {
@@ -265,11 +267,10 @@ header button {
 
 article {
   padding: 32px 16px;
-  background-color: var(--base-light);
-  border-radius: 10px;
+  background-color: var(--base-lightest);
   margin: 5px 10px;
   transition: all 0.3s ease;
-  border: 1px solid rgb(16, 15, 15);
+  border: 15px solid var(--white);
 
 }
 
@@ -285,7 +286,7 @@ article {
 }
 
 article:hover {
-  filter: contrast(150%);
+  filter: contrast(86%);
 }
 
 article .article-heading {
@@ -295,7 +296,7 @@ article .article-heading {
 
 article .icon {
   height: auto;
-  width: 85px;
+  width: 50px;
   margin-left: 10px;
   margin-right: 10px;
   flex-wrap: wrap;
