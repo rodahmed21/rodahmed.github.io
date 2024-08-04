@@ -154,7 +154,6 @@ header .mobile-header {
     text-decoration: none;
     color: var(--black);
     display: block;
-   padding: 4px 16px;
   }
   
   /* .desktop-nav */
@@ -171,6 +170,7 @@ header .mobile-header {
     
       .desktop-nav {
           display: inline-block;
+          margin-left: auto;
       }
     }
  
@@ -245,7 +245,7 @@ header .mobile-header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
+    justify-content: center;
 }
 
 article {
@@ -265,10 +265,8 @@ article {
  }
 
 .projects h2 {
-    justify-content: center;
+    text-align: center;
 }
-
-
 
 article:hover {
  filter: contrast(150%);
@@ -280,8 +278,8 @@ article .article-heading {
  }
 
 article .icon {
- height: 250px;
- width: 250px;
+ height: auto;
+ width: 85px;
  margin-left: 10px;
  margin-right: 10px;
  flex-wrap: wrap;
