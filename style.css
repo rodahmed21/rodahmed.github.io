@@ -236,6 +236,10 @@ header .mobile-header {
 
 /* .Projects */
 
+.projects {
+  max-width: 60%;
+  margin: 40px auto;
+}
 
 .project-container {
     display: flex;
